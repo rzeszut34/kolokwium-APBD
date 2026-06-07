@@ -6,4 +6,5 @@ namespace kolosAPBD.Services;
 public interface IPlayerService
 {
     Task<GetPlayerMatchesDto> GetPlayerMatches(int playerId);
+    Task AddPlayerWithMatches(PostPlayerDto dto);
 }

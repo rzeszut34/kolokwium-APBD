@@ -1,4 +1,5 @@
 using kolosAPBD.Data;
+using kolosAPBD.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,7 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 
 //dodaj scoped
-
+builder.Services.AddScoped<IPlayerService, PlayerService>();
 //dodaj dbContext
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
