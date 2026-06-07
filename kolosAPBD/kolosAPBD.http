@@ -1,0 +1,6 @@
+@kolosAPBD_HostAddress = http://localhost:5075
+
+GET {{kolosAPBD_HostAddress}}/api/
+Accept: application/json
+
+###
